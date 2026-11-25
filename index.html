@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Sacred Touch Wellness · Greenpoint</title>
 <meta name="description" content="Massage in Greenpoint, Cape Town. At our studio or at your place. Book on WhatsApp 081 789 2364.">
-<meta name="theme-color" content="#120E0B">
+<meta name="theme-color" content="#0A1410">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Cormorant+Garamond:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
@@ -14,10 +14,10 @@
 VOICE   hushed, warm, a little mysterious; few words, said like a person would
 IDEA    a candlelit room at night: photographs surface out of the dark and sink back
 PICTURE giant SACRED wordmark with a real photograph dissolving over it
-COLOUR  near-black warm brown, candle cream, a thread of gold
+COLOUR  deep forest green-black, candle cream, a thread of gold
 TYPE    Archivo expanded for display, Cormorant italic for the quiet lines
 */
-:root{color-scheme:dark;--bg:#120E0B;--bg2:#1A1410;--ink:#EFE6DA;--mut:rgba(239,230,218,.58);--line:rgba(239,230,218,.13);--gold:#C9A46C;--wa:#1FA855}
+:root{color-scheme:dark;--bg:#0A1410;--bg2:#0F1D17;--deep:#0E261C;--ink:#EEE6D8;--mut:rgba(238,230,216,.55);--line:rgba(201,164,108,.16);--gold:#C9A46C;--wa:#1FA855}
 *{box-sizing:border-box;min-width:0}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 Archivo,system-ui,sans-serif;overflow-x:clip;-webkit-font-smoothing:antialiased}
@@ -53,7 +53,7 @@ svg{width:1em;height:1em;flex:none}
 .top .wrap{display:flex;justify-content:center;min-height:34px;align-items:center}
 .top a{text-decoration:none}
 header{position:sticky;top:0;z-index:40;transition:background .5s,box-shadow .5s}
-header.solid{background:rgba(18,14,11,.6);backdrop-filter:blur(18px) saturate(1.3);-webkit-backdrop-filter:blur(18px) saturate(1.3);box-shadow:0 1px 0 var(--line)}
+header.solid{background:rgba(10,20,16,.62);backdrop-filter:blur(18px) saturate(1.3);-webkit-backdrop-filter:blur(18px) saturate(1.3);box-shadow:0 1px 0 var(--line)}
 .hd{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;min-height:72px}
 .nav{display:flex;gap:30px}
 .nav a,.act a{font:600 11.5px Archivo,sans-serif;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;display:inline-flex;align-items:center;gap:8px;min-height:44px;color:var(--mut);transition:color .3s}
@@ -74,16 +74,16 @@ header.open .burger i:last-child{transform:translateY(-3.75px) rotate(-45deg)}
   .burger{display:block}
   .logo{justify-content:center}.logo b{font-size:16px}.logo svg{font-size:22px}
   .act a{width:44px;justify-content:center}.act svg{font-size:22px}
-  .sheet{display:block;max-height:0;overflow:hidden;transition:max-height .45s ease;background:rgba(18,14,11,.94);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+  .sheet{display:block;max-height:0;overflow:hidden;transition:max-height .45s ease;background:rgba(10,20,16,.94);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
   header.open .sheet{max-height:360px;border-bottom:1px solid var(--line)}
   .sheet a{display:block;padding:16px max(4vw,18px);border-top:1px solid var(--line);font:700 21px Archivo,sans-serif;font-stretch:125%;text-decoration:none}
 }
 
 /* hero */
-.hero{padding:clamp(18px,3vw,34px) 0 clamp(40px,6vw,80px)}
+.hero{padding:clamp(18px,3vw,34px) 0 clamp(40px,6vw,80px);background:radial-gradient(ellipse 60% 55% at 50% 48%,rgba(26,74,52,.55),transparent 70%)}
 .hero .tl{display:flex;justify-content:space-between;gap:20px}
 .stage{position:relative;height:clamp(420px,52vw,720px);display:grid;place-items:center}
-.mega{font-size:clamp(70px,17vw,265px);font-stretch:125%;font-weight:800;letter-spacing:-.045em;line-height:.8;white-space:nowrap;margin:0;color:#E9DFD1;user-select:none}
+.mega{font-size:clamp(70px,17vw,265px);font-stretch:125%;font-weight:800;letter-spacing:-.045em;line-height:.8;white-space:nowrap;margin:0;color:#E6DCCB;user-select:none}
 .fig{position:absolute;left:50%;top:0;bottom:0;transform:translateX(-50%);width:clamp(260px,40vw,560px)}
 .fig img{width:100%;height:100%;object-fit:cover;object-position:40% 40%}
 @media (prefers-reduced-motion:no-preference){.fig{animation:rise 2.6s cubic-bezier(.2,.7,.2,1) both}@keyframes rise{from{opacity:0;filter:blur(10px)}}}
@@ -114,6 +114,7 @@ header.open .burger i:last-child{transform:translateY(-3.75px) rotate(-45deg)}
 .mo .lb span{font-size:14px;color:var(--mut);white-space:nowrap}
 @media(max-width:700px){.mo{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.mo a:nth-child(2){margin-top:60px}.mo a:nth-child(3){grid-column:span 2;width:70%;justify-self:center;margin-top:-20px}}
 
+#prices{background:linear-gradient(180deg,transparent,var(--deep) 30%,var(--deep) 70%,transparent)}
 /* price list */
 .sec{padding:clamp(64px,9vw,130px) 0}
 .pl{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(30px,6vw,90px);align-items:start}
@@ -127,6 +128,7 @@ header.open .burger i:last-child{transform:translateY(-3.75px) rotate(-45deg)}
 .tbl td:nth-child(3){color:var(--mut);font-weight:500;padding-left:22px}
 .tbl tbody tr{cursor:pointer}
 .tbl tbody tr:hover td,.tbl tbody tr:focus td{color:var(--gold)}
+.tbl td:nth-child(2){color:var(--gold)}
 .tbl td:first-child small{display:block;font-size:13px;color:var(--mut)}
 @media(max-width:800px){.pl{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:420px){.tbl td{font-size:15px}.tbl th{letter-spacing:.12em}}
@@ -152,7 +154,7 @@ header.open .burger i:last-child{transform:translateY(-3.75px) rotate(-45deg)}
 .bk .it{color:var(--mut);margin:16px 0 30px}
 .form{display:grid;gap:20px}
 .form label{display:grid;gap:4px;font:500 11px Archivo,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--mut)}
-.form input,.form select{font:400 16px Archivo,sans-serif;color:var(--ink);background:transparent;border:0;border-bottom:1px solid rgba(239,230,218,.28);border-radius:0;min-height:46px;padding:0 2px;width:100%;-webkit-appearance:none;appearance:none;color-scheme:dark}
+.form input,.form select{font:400 16px Archivo,sans-serif;color:var(--ink);background:transparent;border:0;border-bottom:1px solid rgba(201,164,108,.3);border-radius:0;min-height:46px;padding:0 2px;width:100%;-webkit-appearance:none;appearance:none;color-scheme:dark}
 .form select{background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23EFE6DA' stroke-width='1.4'/%3E%3C/svg%3E") no-repeat right 4px center;padding-right:24px}
 .form option{background:var(--bg2);color:var(--ink)}
 .form input::placeholder{color:rgba(239,230,218,.35)}
@@ -161,15 +163,15 @@ header.open .burger i:last-child{transform:translateY(-3.75px) rotate(-45deg)}
 .total{display:flex;justify-content:space-between;align-items:baseline;padding-top:16px;border-top:1px solid var(--line)}
 .total span{font-size:14px;color:var(--mut)}
 .total b{font-size:30px;font-stretch:125%;font-weight:800;white-space:nowrap}
-#go{width:100%;background:var(--wa);border-color:var(--wa);color:#fff}
-#go:hover{background:transparent;color:var(--wa)}
+#go{width:100%;background:var(--gold);border-color:var(--gold);color:#0A1410}
+#go:hover{background:transparent;color:var(--gold)}
 .small{font-size:13px;color:var(--mut);text-align:center;margin:-6px 0 0}
 .small a{color:var(--ink)}
 @media(max-width:800px){.bk{grid-template-columns:minmax(0,1fr)}.bk .ph{max-width:none;aspect-ratio:4/3.2}}
 @media(max-width:420px){.two{grid-template-columns:minmax(0,1fr)}}
 
 /* footer */
-footer{border-top:1px solid var(--line)}
+footer{border-top:1px solid var(--line);background:linear-gradient(180deg,var(--bg),var(--deep))}
 .fw{font-size:clamp(28px,8.6vw,132px);font-stretch:125%;font-weight:800;letter-spacing:-.045em;line-height:.85;white-space:nowrap;color:transparent;-webkit-text-stroke:1px rgba(201,164,108,.45);padding-top:clamp(40px,6vw,80px);overflow:hidden;text-align:center}
 .fr{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;padding:clamp(24px,3vw,34px) 0;border-top:1px solid var(--line);margin-top:clamp(26px,3vw,40px)}
 .fl{display:flex;gap:22px;flex-wrap:wrap}
@@ -180,7 +182,7 @@ footer{border-top:1px solid var(--line)}
 .made b{color:var(--ink);letter-spacing:.12em}
 .copy{font-size:12px;color:rgba(239,230,218,.4)}
 
-.fab{position:fixed;right:18px;bottom:18px;z-index:50;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--wa);color:#fff;box-shadow:0 14px 30px -10px rgba(0,0,0,.7);transform:scale(0);transition:transform .4s cubic-bezier(.3,1.4,.5,1)}
+.fab{position:fixed;right:18px;bottom:18px;z-index:50;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--gold);color:#0A1410;box-shadow:0 14px 30px -10px rgba(0,0,0,.7),0 0 0 6px rgba(201,164,108,.12);transform:scale(0);transition:transform .4s cubic-bezier(.3,1.4,.5,1)}
 .fab.on{transform:scale(1)}
 .fab svg{font-size:27px}
 </style>
@@ -196,7 +198,6 @@ footer{border-top:1px solid var(--line)}
   </symbol><symbol id="wa" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></symbol><symbol id="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol><symbol id="clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol><symbol id="car" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M4 16v-4l2-5h12l2 5v4z"/><path d="M4 16v2M20 16v2M4 12h16"/><circle cx="7.5" cy="14" r=".8" fill="currentColor"/><circle cx="16.5" cy="14" r=".8" fill="currentColor"/></symbol>
 </svg>
 
-<div class="top"><div class="wrap"><a data-direct href="#">Bookings on WhatsApp · 081 789 2364</a></div></div>
 
 <header id="hd">
   <div class="wrap hd">
@@ -211,14 +212,14 @@ footer{border-top:1px solid var(--line)}
 <main id="top">
 <section class="hero">
   <div class="wrap">
-    <div class="tl"><div class="cap">Greenpoint<br>Cape Town</div><div class="cap r" style="text-align:right">At our place<br>or yours</div></div>
+    <div class="tl"><div class="cap">Greenpoint</div><div class="cap r" style="text-align:right">Cape Town</div></div>
     <div class="stage">
       <h1 class="mega" aria-label="Sacred Touch Wellness">SACRED</h1>
       <div class="fig softer"><img src="img/p-arm.jpg" alt="A therapist's hands working along a forearm" fetchpriority="high"></div>
     </div>
     <div class="bl">
       <p class="it" style="margin:0">Slow down.<br>You're in good hands.</p>
-      <div class="cta"><a class="btn" href="#book"><svg><use href="#wa"/></svg>Book an hour</a><a class="lnk" href="#prices">Prices <i>→</i></a></div>
+      <div class="cta"><a class="btn" href="#book"><svg><use href="#wa"/></svg>Book</a><a class="lnk" href="#prices">Prices <i>→</i></a></div>
     </div>
   </div>
 </section>
@@ -235,10 +236,10 @@ footer{border-top:1px solid var(--line)}
   <div class="wrap pl">
     <div class="rv">
       <h2 class="x">AN HOUR,<br>JUST FOR YOU.</h2>
-      <p class="it">Every session is sixty minutes.<br>Tap one to book it.</p>
+      <p class="it">Sixty minutes. Always.</p>
     </div>
     <table class="tbl rv">
-      <thead><tr><th>Treatment</th><th>Studio</th><th>We come to you</th></tr></thead>
+      <thead><tr><th></th><th>Studio</th><th>Your place</th></tr></thead>
       <tbody id="rows"></tbody>
     </table>
   </div>
@@ -248,8 +249,8 @@ footer{border-top:1px solid var(--line)}
   <div class="room">
     <div class="rv">
       <h2 class="x">THE ROOM<br>IS&nbsp;READY.</h2>
-      <p class="it">Candles lit, towels warm.<br>All you need to do is show up.</p>
-      <a class="btn" href="#book" data-book=""><svg><use href="#wa"/></svg>Book a time</a>
+      <p class="it">Candles lit. Towels warm.</p>
+      <a class="lnk" href="#book" data-book="">Book a time <i>→</i></a>
     </div>
     <div class="ph soft rv"><img src="img/p-towels.jpg" alt="Warm towels, stones and candles laid out in the treatment room" loading="lazy"></div>
   </div>
@@ -264,10 +265,10 @@ footer{border-top:1px solid var(--line)}
     <div class="ph soft rv"><img src="img/p-window.jpg" alt="Late afternoon light across a client's back during a massage" loading="lazy"></div>
     <div class="rv">
       <h2 class="x">BOOK YOUR<br>HOUR.</h2>
-      <p class="it">Pick a treatment. We'll take it from there on WhatsApp.</p>
+      <p class="it">Choose. We'll do the rest.</p>
       <form class="form" id="bf" novalidate>
         <label>Treatment<select id="fT"></select></label>
-        <label>Where<select id="fW"><option value="studio">Our studio, Greenpoint</option><option value="mobile">My place</option></select></label>
+        <label>Where<select id="fW"><option value="studio">Studio, Greenpoint</option><option value="mobile">My place</option></select></label>
         <div class="two">
           <label>Day<input id="fD" type="date"></label>
           <label>Time<select id="fH"><option value="">Any time</option><option>Morning</option><option>Midday</option><option>Afternoon</option><option>Evening</option></select></label>
@@ -276,7 +277,7 @@ footer{border-top:1px solid var(--line)}
         <label id="aW" hidden>Area<input id="fA" type="text" placeholder="e.g. Sea Point"></label>
         <div class="total"><span id="fL">60 min · studio</span><b id="fP">R850</b></div>
         <a class="btn" id="go" href="#" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Send on WhatsApp</a>
-        <p class="small">Or just message us: <a data-direct href="#">081 789 2364</a></p>
+        <p class="small"><a data-direct href="#">081 789 2364</a></p>
       </form>
     </div>
   </div>
@@ -287,7 +288,7 @@ footer{border-top:1px solid var(--line)}
   <div class="wrap">
     <div class="fw" aria-hidden="true">SACRED TOUCH</div>
     <div class="fr">
-      <p class="it" style="margin:0;color:var(--gold)">More than a massage.</p>
+      <p class="it" style="margin:0;color:var(--gold)">Where your body rests.</p>
       <div class="fl"><a href="#prices">Prices</a><a href="#room">The room</a><a href="#book">Book</a></div>
     </div>
     <div class="fr" style="margin-top:0">
@@ -314,7 +315,7 @@ const T=[
 const R=v=>'R'+v.toLocaleString('en-ZA').replace(/\s|,/g,',');
 const $=id=>document.getElementById(id);
 
-$('rows').innerHTML=T.map((t,i)=>`<tr data-i="${i}" tabindex="0"><td>${t.n}<small>${t.h}</small></td><td>${R(t.s)}</td><td>${R(t.m)}</td></tr>`).join('');
+$('rows').innerHTML=T.map((t,i)=>`<tr data-i="${i}" tabindex="0"><td>${t.n}</td><td>${R(t.s)}</td><td>${R(t.m)}</td></tr>`).join('');
 $('fT').innerHTML=T.map((t,i)=>`<option value="${i}">${t.n}</option>`).join('');
 
 const d=$('fD');d.min=new Date().toISOString().slice(0,10);
